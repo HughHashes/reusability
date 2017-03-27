@@ -3,7 +3,7 @@ var budi;
 var hulk;
 var rr;
 var celtics;
-var promp = prompt("What do you like more, Youtube, Basketball, or Fighting?");
+var promp = prompt("What do you like more, Youtube, Basketball, or Fighting? (Write as is)");
 
 
 
@@ -33,7 +33,6 @@ function draw(){
 
 
 function pic(x, y){
-    
     if(promp == "Basketball"){
         img = image(celtics, x - 25, y + 15, 100, 100);
     }
