@@ -3,8 +3,8 @@ var budi;
 var hulk;
 var rr;
 var celtics;
-var promp = prompt("What do you like more, Youtube, Basketball, or Fighting? (Write as is)");
-
+var promp = prompt("What do you like more, Youtube, Basketball, or Fighting?");
+var lower = promp.toLowerCase();
 
 
 function preload() {
@@ -33,13 +33,14 @@ function draw(){
 
 
 function pic(x, y){
-    if(promp == "Basketball"){
+    
+    if(lower == "basketball"){
         img = image(celtics, x - 25, y + 15, 100, 100);
     }
-    if(promp == "Fighting"){
+    if(lower == "fighting"){
         img = image(hulk, x - 25, y + 15, 100, 100);
     }
-    if(promp == "Youtube"){
+    if(lower == "youtube"){
         img = image(rr, x - 30, y + 4, 100, 100);
     }
     
