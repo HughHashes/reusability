@@ -3,7 +3,7 @@ var budi;
 var hulk;
 var rr;
 var celtics;
-//prompt("What do you like more, Youtube, Basketball, or Fighting?")
+var promp = prompt("What do you like more, Youtube, Basketball, or Fighting?");
 
 
 
@@ -33,16 +33,19 @@ function draw(){
 
 
 function pic(x, y){
-    // if(prompt == Basketball){
-    //     img = image(celtics, x - 25, y + 15, 100, 100);
-    // }
-    // if(prompt == Fighting){
-    //     img = image(hulk, x - 25, y + 15, 100, 100);
-    // }
     
-    // img = image(rr, x - 30, y + 4, 100, 100);
+    if(promp == "Basketball"){
+        img = image(celtics, x - 25, y + 15, 100, 100);
+    }
+    if(promp == "Fighting"){
+        img = image(hulk, x - 25, y + 15, 100, 100);
+    }
+    if(promp == "Youtube"){
+        img = image(rr, x - 30, y + 4, 100, 100);
+    }
+    
         
-    image(celtics, x - 25, y + 15, 100, 100);
+    img;
     image(budi, x, y, 50, 50);
     
 }
